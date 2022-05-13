@@ -8,7 +8,13 @@
          <img src="@/assets/img/dark-logo.png" alt="logo">
        </div>
        <!-- /.logo -->
-       <div class="menu">MENU</div>
+       <div class="menu">
+         <ul class="d-flex">
+            <li v-for="link in HeaderMenu" :key="link">
+             <a href="#">{{link}}</a>
+            </li>
+         </ul>
+       </div>
        <!-- /.menu -->
        <div class="social_nav">SOCIAL</div>
        <!-- /.social_nav -->
@@ -27,6 +33,18 @@ export default {
   name: 'App',
   components: {
     
+  },
+  data () {
+    return {
+      HeaderMenu: [
+        'Home',
+        'Pages',
+        'Courses',
+        'Features',
+        'Blog',
+        'Shop',
+      ]
+    }
   }
 }
 </script>
@@ -42,6 +60,20 @@ header {
     .logo {
       img {
         max-width: 150px;
+      }
+    }
+    .menu {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        column-gap: 3rem;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
       }
     }
   }
