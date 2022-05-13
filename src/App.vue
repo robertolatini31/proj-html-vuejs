@@ -18,11 +18,11 @@
        </div>
        <!-- /.menu -->
        <div class="social_nav">
-
-          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-twitter" />
-          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-facebook-f" />
-          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-instagram" />
-          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-linkedin" />
+          <font-awesome-icon class="icon_social_nav change_menu" icon="fa-solid fa-bars" />
+          <font-awesome-icon class="icon_social_nav d_none_sm" icon="fa-brands fa-twitter" />
+          <font-awesome-icon class="icon_social_nav d_none_sm" icon="fa-brands fa-facebook-f" />
+          <font-awesome-icon class="icon_social_nav d_none_sm" icon="fa-brands fa-instagram" />
+          <font-awesome-icon class="icon_social_nav d_none_sm" icon="fa-brands fa-linkedin" />
 
        </div>
        <!-- /.social_nav -->
@@ -93,7 +93,21 @@ header {
         margin-right: 1rem;
         font-size: 1.2rem;
       }
+      .change_menu {
+        display: none;
+      }    
     }
+  }
+}
+@media screen and (max-width:"992px") {
+  .menu {display: none;}
+  .change_menu {
+    display: inline-block!important;
+  }
+}
+@media screen and (max-width:"576px") {
+  .d_none_sm {
+    display: none;
   }
 }
 }
