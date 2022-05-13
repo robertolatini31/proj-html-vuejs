@@ -1,6 +1,23 @@
 <template>
   <div id="app">
-   <h1 class="text-center"><font-awesome-icon icon="fa-solid fa-user-secret" /></h1>
+   
+   <header>
+     <div class="container">
+       <nav class="d-flex justify-content-between">
+       <div class="logo">
+         <img src="@/assets/img/dark-logo.png" alt="logo">
+       </div>
+       <!-- /.logo -->
+       <div class="menu">MENU</div>
+       <!-- /.menu -->
+       <div class="social_nav">SOCIAL</div>
+       <!-- /.social_nav -->
+      </nav>
+     </div>
+     <!-- /.container -->
+   </header>
+
+
   </div>
 </template>
 
@@ -19,6 +36,15 @@ export default {
 
 
 #app {
-
+header {
+  nav {
+    padding: 1rem 0;
+    .logo {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}
 }
 </style>
