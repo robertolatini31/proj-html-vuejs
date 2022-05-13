@@ -10,13 +10,21 @@
        <!-- /.logo -->
        <div class="menu">
          <ul class="d-flex">
-            <li v-for="link in HeaderMenu" :key="link">
+            <li class="d-flex align-items-center" v-for="link in HeaderMenu" :key="link">
              <a href="#">{{link}}</a>
+             <font-awesome-icon class="icon_arrow_down" icon="fa-solid fa-angle-down" />
             </li>
          </ul>
        </div>
        <!-- /.menu -->
-       <div class="social_nav">SOCIAL</div>
+       <div class="social_nav">
+
+          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-twitter" />
+          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-facebook-f" />
+          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-instagram" />
+          <font-awesome-icon class="icon_social_nav" icon="fa-brands fa-linkedin" />
+
+       </div>
        <!-- /.social_nav -->
       </nav>
      </div>
@@ -72,8 +80,18 @@ header {
           a {
             text-decoration: none;
             color: black;
+            padding-right: 0.3rem;
+          }
+          .icon_arrow_down {
+            font-size: 0.6rem;
           }
         }
+      }
+    }
+    .social_nav {
+      .icon_social_nav {
+        margin-right: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
