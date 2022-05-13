@@ -29,8 +29,8 @@
       </nav>
       <!-- /.nav  -->
       <div class="hero_image pt-5">
-        <div class="row row-cols-2">
-          <div class="col d-flex">
+        <div class="row row-cols-1 row-cols-lg-2 hero_row">
+          <div class="col d-flex pt-4">
              <div class="hero_text align-self-center">
                 <span class="text-uppercase">i'm wingman</span>
               <h1 class="title pb-4 m-0 pt-4 text-capitalize">peace on earth a <br> wonderful wish <br> but no way</h1>
@@ -46,7 +46,8 @@
           </div>
           <!-- /.col -->
           <div class="col col_hero_img">
-            <img src="@/assets/img/home-movation-hero-image.png" alt="hero_image">
+            <img class="big_img_hero big_hero_image" src="@/assets/img/home-movation-hero-image.png" alt="hero_image">
+            <img class="big_img_hero small_hero_image" src="@/assets/img/home-movation-hero-image-246x300.png" alt="hero_image">
           </div>
           <!-- /.col -->
         </div>
@@ -140,10 +141,19 @@ header {
   .change_menu {
     display: inline-block!important;
   }
+  .hero_row {
+    flex-direction: column-reverse;
+  }
 }
 @media screen and (max-width:"576px") {
   .d_none_sm {
     display: none;
+  }
+  .big_hero_image {
+    display: none;
+  }
+  .small_hero_image {
+    display: inline!important;
   }
 }
 
@@ -176,10 +186,12 @@ header {
     background-position: bottom;
     background-size: 450px;
     img {
-      height: 500px;
+      max-height: 500px;
+    }
+    .small_hero_image {
+      display: none;
     }
   }
-  
 }
 
 }
