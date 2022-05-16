@@ -10,12 +10,13 @@
       <AboutMeComponent />
       <CoursesComponent />
       <BooksComponent />
-      
-
-      
-     
     </div>
     <!-- /.container -->
+    <TestimonialsComponent />
+
+       
+
+   
   </main>
 
   </div>
@@ -27,6 +28,7 @@ import DatesComponent from '@/components/DatesSectionComponent.vue'
 import AboutMeComponent from '@/components/AboutMeSectionComponent.vue'
 import CoursesComponent from '@/components/CoursesSectionComponent.vue'
 import BooksComponent from '@/components/BooksSectionComponent.vue'
+import TestimonialsComponent from '@/components/TestimonialsSectionComponent.vue'
 export default {
   name: 'App',
   components: {
@@ -35,6 +37,7 @@ export default {
     AboutMeComponent,
     CoursesComponent,
     BooksComponent,
+    TestimonialsComponent,
   },
   
 }
