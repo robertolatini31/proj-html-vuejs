@@ -183,7 +183,7 @@
       </div>
       <!-- /.row row_courses -->
 
-     <div class="button_container text-center py-5">
+     <div class="button_container text-center pt-5">
         <button>
         <div class="button_text d-flex">
           <span class="me-2">View all courses</span>
@@ -251,6 +251,7 @@ name: 'CoursesSectionComponent',
       background-color: $Primary-color;
       .button_text {
         color: white;
+        font-weight: 500;
         padding: 0.8rem 2.5rem;
       }
     }

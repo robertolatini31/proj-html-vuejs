@@ -9,6 +9,8 @@
       <DatesComponent />
       <AboutMeComponent />
       <CoursesComponent />
+      <BooksComponent />
+      
 
       
      
@@ -24,6 +26,7 @@ import Header from '@/components/SiteHeader.vue'
 import DatesComponent from '@/components/DatesSectionComponent.vue'
 import AboutMeComponent from '@/components/AboutMeSectionComponent.vue'
 import CoursesComponent from '@/components/CoursesSectionComponent.vue'
+import BooksComponent from '@/components/BooksSectionComponent.vue'
 export default {
   name: 'App',
   components: {
@@ -31,6 +34,7 @@ export default {
     DatesComponent,
     AboutMeComponent,
     CoursesComponent,
+    BooksComponent,
   },
   
 }
@@ -50,7 +54,7 @@ export default {
 }
 
 main {
- 
+  
 }
 
 </style>

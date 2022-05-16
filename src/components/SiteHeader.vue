@@ -140,6 +140,7 @@ header {
       border-radius: 5px;
       background-color: $Primary-color;
       .button_text {
+        font-weight: 500;
         color: white;
         padding: 0.8rem 2.5rem;
       }
