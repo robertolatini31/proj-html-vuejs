@@ -64,8 +64,10 @@ name: 'AboutMeSection',
     .yt_video {
       position: relative;
       .banner_video {
+        box-shadow: 0 8px 15px -7px black;
         width: 100%;
         object-fit: cover;
+        border-radius: 5px;
       }
       .yt_logo {
         position: absolute;
