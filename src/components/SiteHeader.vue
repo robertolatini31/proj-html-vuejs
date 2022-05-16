@@ -123,6 +123,9 @@ header {
   .hero_image {
   .hero_text {
     color: $Dark-color;
+    h1 {
+      line-height: 3.5rem;
+    }
     span, p, .button_text {
       font-size: 0.8rem;
     }
