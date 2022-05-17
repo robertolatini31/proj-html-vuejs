@@ -100,8 +100,20 @@ name: 'BlogUpdatedSectionComponent',
       }
     }
     }
+    .article_card img, .article_card h6 {
+        cursor: pointer;
+    }
+    .article_card h6:hover {
+        color: $Primary-color!important;
+    }
+    .article_card:hover  img {
+      transform: scale(1.1);
+    }
     .article_card {
+        border-radius: 5px;
+         overflow: hidden;
       img {
+           transition: transform .5s ease;
         border-radius: 5px;
       }
       span {

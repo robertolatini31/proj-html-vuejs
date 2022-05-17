@@ -177,11 +177,17 @@ name: 'BookSectionComponent',
       background-color: $Secondary-color;
     }
  }
+ .book_card img, .book_card h5 {
+   cursor: pointer;
+ }
  .book_card:hover .icons_hover{
    display: flex!important;
  }
  .book_card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+ }
+ .book_card h5:hover {
+   color: $Primary-color!important;
  }
  .book_card {
    img {

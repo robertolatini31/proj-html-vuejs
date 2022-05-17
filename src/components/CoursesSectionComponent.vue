@@ -217,9 +217,15 @@ name: 'CoursesSectionComponent',
         }
       }
    }
+   .text_card>h5, .course_card img {
+     cursor: pointer;
+   }
    .course_card:hover {
       background-color: white;
       box-shadow: 0 8px 15px -7px black;
+   }
+   .text_card>h5:hover {
+     color: $Primary-color!important;
    }
    .course_card:hover  img {
       transform: scale(1.1);
