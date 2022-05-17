@@ -180,7 +180,14 @@ name: 'BookSectionComponent',
  .book_card:hover .icons_hover{
    display: flex!important;
  }
+ .book_card:hover img {
+    transform: scale(1.1);
+ }
  .book_card {
+   img {
+      transition: transform .5s ease;
+   }
+   overflow: hidden;
    position: relative;
    h5 {
      color: $Secondary-color;

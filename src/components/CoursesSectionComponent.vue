@@ -221,10 +221,16 @@ name: 'CoursesSectionComponent',
       background-color: white;
       box-shadow: 0 8px 15px -7px black;
    }
+   .course_card:hover  img {
+      transform: scale(1.1);
+    }
    .course_card {
+     overflow: hidden;
+      border-radius: 5px;
      background-color: $lighter-color;
      border-radius: 5px;
      img {
+       transition: transform .5s ease;
        border-radius: 5px;
      }
      .text_card {
