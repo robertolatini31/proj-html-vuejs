@@ -32,14 +32,14 @@ export default {
 name: 'HeroImageComponent',
 data () {
   return {
-    x: 0,
-    y: 0,
+    x: 70,
+    y: 100,
   }
 },
 methods: {
   MouseMoved(e) {
-    this.x = - e.offsetX / 50;
-    this.y = - e.offsetY / 50;
+    this.x = 70 - e.offsetX / 20 ;
+    this.y = 100 - (e.offsetY / 20);
   }
 }
 }
