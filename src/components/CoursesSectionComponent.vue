@@ -246,6 +246,7 @@ name: 'CoursesSectionComponent',
          font-weight: 500;
        }
        h5 {
+         transition: all .5s;
          color: $Secondary-color;
          line-height: 1.8rem;
        }
@@ -258,6 +259,7 @@ name: 'CoursesSectionComponent',
      }
    }
    button {
+     transition: all .5s;
       border: none;
       border-radius: 5px;
       background-color: $Primary-color;

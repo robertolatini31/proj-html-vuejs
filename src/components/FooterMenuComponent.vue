@@ -62,8 +62,10 @@ props: {
       ul {
         list-style: none;
         li {
+           
           padding: 0.8rem 0;
           a {
+               transition: all .2s;
             text-decoration: none;
             color: $Light-Dark-color;
             font-size: 0.8rem;
@@ -77,6 +79,7 @@ props: {
       }
       .footer_social {
         .social_icon {
+            transition: all .2s;
             text-decoration: none;
              color: $Light-Dark-color;
              font-size: 1.5rem;

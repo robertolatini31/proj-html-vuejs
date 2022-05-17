@@ -113,9 +113,11 @@ nav {
         }
         li {
           a, .icon_arrow_down {
+              transition: all .2s;
             color: $Secondary-color;
           }
           a {
+              transition: all .5s;
             text-decoration: none;
             padding-right: 0.3rem;
           }
@@ -138,6 +140,7 @@ nav {
             color: $Primary-color;
         }
       .icon_social_nav {
+          transition: all .2s;
         cursor: pointer;
         margin-right: 1rem;
         font-size: 1.2rem;

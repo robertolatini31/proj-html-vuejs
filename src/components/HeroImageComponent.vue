@@ -62,6 +62,7 @@ methods: {
       color: $Light-Dark-color;
     }
     button {
+      transition: all .5s;
       border: none;
       border-radius: 5px;
       background-color: $Primary-color;

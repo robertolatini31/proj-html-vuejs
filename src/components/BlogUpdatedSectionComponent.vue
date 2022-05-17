@@ -121,6 +121,7 @@ name: 'BlogUpdatedSectionComponent',
         color: $Light-Dark-color;
       }
       h6 {
+          transition: all .5s;
         line-height: 1.8rem;
       }
     }

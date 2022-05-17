@@ -158,12 +158,13 @@ name: 'BookSectionComponent',
        font-size: 1rem;
      }
      span {
-       font-size: 0.8rem;
+       font-size: 0.9rem;
        color: $Light-Dark-color;
      }
    }
  }
  button {
+   transition: all .5s;
       border: none;
       border-radius: 5px;
       background-color: $Primary-color;
@@ -196,6 +197,7 @@ name: 'BookSectionComponent',
    overflow: hidden;
    position: relative;
    h5 {
+     transition: all .5s;
      color: $Secondary-color;
    }
    span {
@@ -209,12 +211,16 @@ name: 'BookSectionComponent',
      top: 5%;
      right: 5%;
      .icon_hover {
+       transition: all .2s;
        box-shadow: 0 0 20px -8px black;
        cursor: pointer;
        height: 50px;
        width: 50px;
        border-radius: 50%;
        background-color: white;
+     }
+     .icon_hover:hover {
+       color: $Primary-color!important;
      }
    } 
  }
@@ -228,6 +234,7 @@ name: 'BookSectionComponent',
      filter: none;
    }
    img {
+     transition: all .5s;
      filter: grayscale(1) opacity(0.38);
    }
  }
