@@ -208,6 +208,9 @@ name: 'BookSectionComponent',
      justify-content: center;
      margin-bottom: 3rem;
    }
+   img:hover {
+     filter: none;
+   }
    img {
      filter: grayscale(1) opacity(0.38);
    }

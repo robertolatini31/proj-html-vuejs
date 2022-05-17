@@ -51,21 +51,21 @@ data () {
             },
             {
                 avatar: require('@/assets/img/testimonial-avata-01.jpg'),
-                text: ' Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, sit ut<br> my own schedule and choose the subject i<br> want to learn from the syllabus. Great<br> study portal for people like me.',
-                name: 'mimmo lace',
-                work: '/ Manager'
+                text: 'I am happy with their arrangement of<br> lessons and subjects. They reflect a<br> scientific  investigation into effective<br> methods to adopt for learners.',
+                name: 'luvic dubble',
+                work: '/ Private Tutor'
             },
             {
                 avatar: require('@/assets/img/testimonial-avata-03.jpg'),
-                text: 'I am free to learn at my own pace, follow<br>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, sit ut<br> want to learn from the syllabus. Great<br> study portal for people like me.',
-                name: 'michael red',
-                work: '/ Artist'
+                text: "I'm a very strict person so I require<br> everything to be organized and neat.<br> Then, I'll be able to make things right and<br> shine. MaxCoach guys just got me.",
+                name: 'florence themes',
+                work: '/ Multimedia Admin'
             },
             {
                 avatar: require('@/assets/img/testimonial-avata-04.jpg'),
-                text: 'I am free to learn at my own pace, follow<br> my own schedule and choose the subject i<br>  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, sit ut<br> study portal for people like me.',
-                name: 'oliver jass',
-                work: '/ Author'
+                text: 'I need to get a certification for English<br> proficiency and MaxCoach is my best<br> choice. Their tutors are smart and<br> professional when dealing with students.',
+                name: 'Madley Pondor',
+                work: '/ IT Specialist'
             }
         ],
     }
