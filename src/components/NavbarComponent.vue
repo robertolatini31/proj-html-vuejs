@@ -6,9 +6,21 @@
        <!-- /.logo -->
        <div class="menu">
          <ul class="d-flex">
-            <li class="d-flex align-items-center" v-for="link in HeaderMenu" :key="link">
-             <a href="#">{{link}}</a>
-             <font-awesome-icon class="icon_arrow_down" icon="fa-solid fa-angle-down" />
+            <li class="d-flex align-items-center" v-for="HeaderMenuItem in HeaderMenu" :key="HeaderMenuItem.name">
+             
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{HeaderMenuItem.name}}
+                        <font-awesome-icon class="icon_arrow_down" icon="fa-solid fa-angle-down" />
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li v-for="link in HeaderMenuItem.links" :key="link">
+                            <a class="dropdown-item" href="#">{{link}}</a>
+                        </li>
+                    </ul>
+                </div>
+
             </li>
          </ul>
        </div>
@@ -32,12 +44,60 @@ name: 'NavbarComponent',
 data () {
     return {
       HeaderMenu: [
-        'Home',
-        'Pages',
-        'Courses',
-        'Features',
-        'Blog',
-        'Shop',
+          {
+              name: 'Home',
+              links: [
+                  'MaxCoach Education',
+                  'Course Portal',
+                  'Distant Learning',
+                  'Multimedia Pedagogy',
+              ],
+          },
+          {
+              name: 'Pages',
+              links: [
+                  'Start Here',
+                  'Success Story',
+                  'About Me',
+              ],
+          },
+          {
+              name: 'Courses',
+              links: [
+                  'Courses Grid 01',
+                  'Courses Grid 02',
+                 'Courses Grid 03',
+              ],
+          },
+           {
+              name: 'Features',
+              links: [
+                  'Events',
+                  'Zoom Meetings',
+              ],
+          },
+            {
+              name: 'Blog',
+              links: [
+                  'Blog Grid',
+                  'Blog Classic',
+              ],
+          },
+          {
+              name:  'Shop',
+              links: [
+                  'Shop Left Sidebar',
+                  'Shop Right Sidebar',
+                  'Cart',
+                  'Wishlist'
+              ],
+          },
+        
+        
+        
+        
+        
+       
       ]
     }
   }
@@ -59,6 +119,9 @@ nav {
         margin: 0;
         padding: 0;
         column-gap: 3rem;
+        li:hover a, li:hover .icon_arrow_down {
+            color: $Primary-color;
+        }
         li {
           a, .icon_arrow_down {
             color: $Secondary-color;
@@ -68,13 +131,25 @@ nav {
             padding-right: 0.3rem;
           }
           .icon_arrow_down {
-            font-size: 0.6rem;
+            font-size: 0.7rem;
           }
+          .dropdown-toggle::after {
+              content: none;
+          } 
+          .dropdown-menu > li > a:hover {
+                background-image: none;
+                background-color: $Primary-color;
+                color: white;
+            }
         }
       }
     }
     .social_nav {
+        .icon_social_nav:hover {
+            color: $Primary-color;
+        }
       .icon_social_nav {
+        cursor: pointer;
         margin-right: 1rem;
         font-size: 1.2rem;
         color: $Dark-color;

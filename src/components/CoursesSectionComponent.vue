@@ -255,5 +255,8 @@ name: 'CoursesSectionComponent',
         padding: 0.8rem 2.5rem;
       }
     }
+    button:hover {
+      background-color: $Secondary-color;
+    }
  }
 </style>

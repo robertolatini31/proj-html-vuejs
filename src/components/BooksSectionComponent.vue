@@ -173,6 +173,9 @@ name: 'BookSectionComponent',
         padding: 0.8rem 2.5rem;
       }
     }
+    button:hover {
+      background-color: $Secondary-color;
+    }
  }
  .book_card:hover .icons_hover{
    display: flex!important;
