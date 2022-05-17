@@ -28,6 +28,9 @@ export default {
 @import '@/assets/scss/style.scss';
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
+#app {
+  color: $Dark-color;
+}
 
 .title {
   font-family: 'Playfair Display', serif;

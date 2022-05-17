@@ -25,7 +25,7 @@
           <div class="col menu_col pt-4">
             <div class="row row-cols-2 row-cols-sm-3">
               <div class="col mb-4" v-for="(MenuItem, index) in MenuItems" :key="MenuItem.name + index">
-                <h5 class="mb-0">{{MenuItem.name}}</h5>
+                <h5>{{MenuItem.name}}</h5>
                 <ul class="p-0 m-0">
                   <li v-for="link in MenuItem.links" :key="link">
                     <a href="#">{{link}}</a>
@@ -46,37 +46,9 @@
 <script>
 export default {
 name: 'FooterMenuComponent',
-data () {
-    return {
-      MenuItems: [
-        {
-          name: 'Explore',
-          links: [
-            'Start here',
-            'Blog',
-            'About us',
-          ],
-        },
-        {
-          name: ' ',
-          links: [
-            'Success story',
-            'Courses',
-            'Contact us',
-          ],
-        },
-        {
-          name: 'Information',
-          links: [
-            'Membership',
-            'Purchase guide',
-            'Privacy policy',
-            'Terms of service',
-          ],
-        }
-      ],
-    }
-  }
+props: {
+    MenuItems: Array,
+}
 }
 </script>
 

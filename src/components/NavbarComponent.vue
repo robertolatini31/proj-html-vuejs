@@ -1,5 +1,5 @@
 <template>
-  <nav class="d-flex justify-content-between">
+  <nav class="d-flex justify-content-between py-4">
        <div class="logo">
          <img src="@/assets/img/dark-logo.png" alt="logo">
        </div>
@@ -30,9 +30,9 @@
         <div class="drop_container">
             <font-awesome-icon @click="DropToggle" class="icon_social_nav change_menu" icon="fa-solid fa-bars" />
 
-            <div @mouseleave="DropOff" :class="ControlDrop ? 'd_show' : ''" class="change_menu_drop p-2 border">
+            <div @mouseleave="DropOff" :class="ControlDrop ? 'd_show' : ''" class="change_menu_drop p-3 border">
                     <ul class="d-flex flex-column p-0 m-0">
-                    <li class="d-flex align-items-center" v-for="HeaderMenuItem in HeaderMenu" :key="HeaderMenuItem.name">
+                    <li class="d-flex align-items-center py-2" v-for="HeaderMenuItem in HeaderMenu" :key="HeaderMenuItem.name">
                     
                         <div class="dropdown">
                             <a class="dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,67 +70,14 @@
 <script>
 export default {
 name: 'NavbarComponent',
+props: {
+    HeaderMenu: Array,
+},
 data () {
     return {
-      HeaderMenu: [
-          {
-              name: 'Home',
-              links: [
-                  'MaxCoach Education',
-                  'Course Portal',
-                  'Distant Learning',
-                  'Multimedia Pedagogy',
-              ],
-          },
-          {
-              name: 'Pages',
-              links: [
-                  'Start Here',
-                  'Success Story',
-                  'About Me',
-              ],
-          },
-          {
-              name: 'Courses',
-              links: [
-                  'Courses Grid 01',
-                  'Courses Grid 02',
-                 'Courses Grid 03',
-              ],
-          },
-           {
-              name: 'Features',
-              links: [
-                  'Events',
-                  'Zoom Meetings',
-              ],
-          },
-            {
-              name: 'Blog',
-              links: [
-                  'Blog Grid',
-                  'Blog Classic',
-              ],
-          },
-          {
-              name:  'Shop',
-              links: [
-                  'Shop Left Sidebar',
-                  'Shop Right Sidebar',
-                  'Cart',
-                  'Wishlist'
-              ],
-          },
-        
-        
-        
-        
-        
-       
-      ],
-      ControlDrop: false,
+        ControlDrop: false,
     }
-  },
+},
   methods: {
       DropToggle() {
           if (this.ControlDrop == false) {
