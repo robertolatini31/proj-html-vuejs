@@ -61,9 +61,15 @@ name: 'AboutMeSection',
     h5 {
       line-height: 2rem;
     }
+    .yt_video:hover .banner_video {
+      transform: scale(1.1);
+    }
     .yt_video {
+      overflow: hidden;
       position: relative;
+      border-radius: 5px;
       .banner_video {
+        transition: transform .5s ease;
         box-shadow: 0 8px 15px -7px black;
         width: 100%;
         object-fit: cover;
