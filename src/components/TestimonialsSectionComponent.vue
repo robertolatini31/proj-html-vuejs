@@ -1,5 +1,5 @@
 <template>
-  <div class="row_testimonials py_4">
+  <div class="row_testimonials">
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col py_4 text-center bg_left">
             <div class="text_story">
@@ -91,6 +91,7 @@ methods: {
 
 <style lang="scss" scoped>
 .row_testimonials {
+    padding: 4rem 12px;
     .bg_left {
       background-image: url('@/assets/img/background-pattern-wavify.png');
       position: relative;
@@ -121,6 +122,7 @@ methods: {
       background-size: cover;
       background-repeat: no-repeat;
       min-height: 400px;
+      max-width: 100%;
     }
     .slider_button {
       cursor: pointer;

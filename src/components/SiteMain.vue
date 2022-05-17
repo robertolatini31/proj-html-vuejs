@@ -7,7 +7,9 @@
       <BooksComponent />
     </div>
     <!-- /.container -->
+
     <TestimonialsComponent />
+    
     <div class="container">
       <BlogUpdatedComponent />
     </div>

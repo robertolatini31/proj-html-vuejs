@@ -1,27 +1,25 @@
 <template>
   <div id="app">
    
-   <Header />
-   <Main />
+  <Header />
+  <Main />
+  <Footer />
   
-  <footer>
-
-    
-
-  </footer>
-
   </div>
 </template>
 
 <script>
 import Header from '@/components/SiteHeader.vue'
 import Main from '@/components/SiteMain.vue'
+import Footer from '@/components/SiteFooter.vue'
 export default {
   name: 'App',
   components: {
     Header,
     Main,
+    Footer,
   },
+  
   
 }
 </script>
@@ -38,6 +36,9 @@ export default {
 .py_4 {
   padding: 4rem 0;
 }
+
+
+
 
 
 </style>
