@@ -2,42 +2,25 @@
   <div id="app">
    
    <Header />
+   <Main />
+  
+  <footer>
 
+    
 
-  <main>
-    <div class="container">
-      <DatesComponent />
-      <AboutMeComponent />
-      <CoursesComponent />
-      <BooksComponent />
-    </div>
-    <!-- /.container -->
-    <TestimonialsComponent />
-
-       
-
-   
-  </main>
+  </footer>
 
   </div>
 </template>
 
 <script>
 import Header from '@/components/SiteHeader.vue'
-import DatesComponent from '@/components/DatesSectionComponent.vue'
-import AboutMeComponent from '@/components/AboutMeSectionComponent.vue'
-import CoursesComponent from '@/components/CoursesSectionComponent.vue'
-import BooksComponent from '@/components/BooksSectionComponent.vue'
-import TestimonialsComponent from '@/components/TestimonialsSectionComponent.vue'
+import Main from '@/components/SiteMain.vue'
 export default {
   name: 'App',
   components: {
     Header,
-    DatesComponent,
-    AboutMeComponent,
-    CoursesComponent,
-    BooksComponent,
-    TestimonialsComponent,
+    Main,
   },
   
 }
@@ -56,8 +39,5 @@ export default {
   padding: 4rem 0;
 }
 
-main {
-  
-}
 
 </style>
