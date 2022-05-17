@@ -16,7 +16,7 @@
              <!-- /.hero_text -->
           </div>
           <!-- /.col -->
-          <div class="col col_hero_img">
+          <div class="col col_hero_img" @mousemove="MouseMoved"  :style="{ 'background-position' : `${x}px ${y}px` }">
             <img class="big_img_hero big_hero_image" src="@/assets/img/home-movation-hero-image.png" alt="hero_image">
             <img class="big_img_hero small_hero_image" src="@/assets/img/home-movation-hero-image-246x300.png" alt="hero_image">
           </div>
@@ -30,6 +30,18 @@
 <script>
 export default {
 name: 'HeroImageComponent',
+data () {
+  return {
+    x: 0,
+    y: 0,
+  }
+},
+methods: {
+  MouseMoved(e) {
+    this.x = - e.offsetX / 50;
+    this.y = - e.offsetY / 50;
+  }
+}
 }
 </script>
 
